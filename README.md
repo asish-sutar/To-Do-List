@@ -22,27 +22,12 @@ Welcome to my TODO application, a simple and efficient Task Manager to help you 
 ## Usage
 
 1. **Home:** Navigate through different sections using the navigation links.
-2. **Add Task:**
-   - Input your name, task name, starting date, and end date.
-   - Click "ADD TASK" to add a new task.
-   - ![Add Task](images/add_task.png)
-
-3. **View Task:**
-   - Displays a table with task details, including name, task, start date, and end date.
-   - ![View Task](images/view_task.png)
-
-4. **Edit Task:**
-   - Modify task details by providing your name, task name, starting date, and end date.
-   - Click "EDIT TASK" to save changes.
-   - ![Edit Task](images/edit_task.png)
-
-5. **Delete Task:**
-   - Enter the task name you want to delete and click "DELETE TASK" to remove it.
-   - ![Delete Task](images/delete_task.png)
+2. **Add Task:** Input your name, task name, starting date, and end date. Click "ADD TASK" to add a new task.
+3. **View Task:** Displays a table with task details, including name, task, start date, and end date.
+4. **Edit Task:** Modify task details by providing your name, task name, starting date, and end date. Click "EDIT TASK" to save changes.
+5. **Delete Task:** Enter the task name you want to delete and click "DELETE TASK" to remove it.
 
 ## How to Run
 
 1. Clone this repository.
 2. Open `index.html` in a web browser.
-
-Feel free to customize this Task Manager according to your needs. Happy task managing! 🚀
