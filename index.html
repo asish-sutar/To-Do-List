@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="#" onclick="showSection('home')">Home</a>
+        <a href="#" onclick="showSection('addTask')">Add</a>
+        <a href="#" onclick="showSection('viewTask')">View</a>
+        <a href="#" onclick="showSection('editTask')">Edit</a>
+        <a href="#" onclick="showSection('deleteTask')">Delete</a>
+    </nav>
+
+    <section id="home" class="active-section">
+        <h2>Welcome to my TODO application</h2>
+        <p>
+            Manage your tasks efficiently with our Task Manager application.
+            Organize your to-dos, keep track of your progress, and stay productive.
+        </p>
+
+        <h6>Add Task</h6>
+        <li>This feature allows users to input and add new tasks to their TODO list.</li>
+        <li>Users typically provide a task title, description, and optionally, a due date or priority.</li>
+        <li>After adding a task, it becomes part of the user's task list.</li>
+
+        <h6>View & Edit Task</h6>
+        <li>View Tasks are usually displayed in a user-friendly format, showing relevant details such as the task title,
+            due date, and status.</li>
+        <li>Users may want to edit a task to change its title, description, due date, or priority based on their
+            evolving needs.</li>
+        <li>Editing tasks helps users keep their task list accurate and up to date.</li>
+
+
+        <h6>Delete Task</h6>
+        <li>This feature allows users to remove tasks from their TODO list.</li>
+        <li>Users may want to delete a task when it's completed, no longer relevant, or if they mistakenly added it.
+        </li>
+        <li>Deleting tasks helps users maintain a clean and organized task list.</li>
+    </section>
+
+    <section id="addTask">
+        <div class="main">
+            <form id="taskForm">
+                <label for="name">Enter Your Name</label><br>
+                <input type="text" id="name" value="" placeholder="" required><br>
+
+                <label for="taskname">Enter Your Task Name</label><br>
+                <input type="text" id="taskname" value="" placeholder="" required><br>
+
+                <label for="startdate">Starting Date</label><br>
+                <input type="date" id="startdate" value="" placeholder="" required><br>
+
+                <label for="enddate">End Date</label><br>
+                <input type="date" id="enddate" value="" placeholder="" required><br>
+
+                <button type="button" onclick="addTask()">ADD TASK</button>
+            </form>
+            <div id="addTaskSuccess" style="color: green;"></div>
+        </div>
+    </section>
+
+    <section id="viewTask">
+        <div class="main">
+            <h2>View Task</h2>
+            <table id="taskTable">
+                <tr>
+                    <th>Name</th>
+                    <th>Task</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section id="editTask">
+        <div class="main">
+            <h2>Edit Task</h2>
+            <form id="editTaskForm">
+                <label for="editName">Enter Your Name</label><br>
+                <input type="text" id="editName" placeholder="" required><br>
+
+                <label for="editTaskName">Enter Your Task Name</label><br>
+                <input type="text" id="editTaskName" placeholder="" required><br>
+
+                <label for="editStartDate">Starting Date</label><br>
+                <input type="date" id="editStartDate" placeholder="" required><br>
+
+                <label for="editEndDate">End Date</label><br>
+                <input type="date" id="editEndDate" placeholder="" required><br>
+
+                <button type="button" onclick="editTask()">EDIT TASK</button>
+            </form>
+            <div id="editTaskSuccess" style="color: green;"></div>
+        </div>
+    </section>
+
+    <section id="deleteTask">
+        <div class="main">
+            <h2>Delete Task</h2>
+            <form id="deleteTaskForm">
+                <label for="deleteTaskName">Enter Task Name to Delete</label><br>
+                <input type="text" id="deleteTaskName" placeholder="" required><br>
+
+                <button type="button" onclick="deleteTask()">DELETE TASK</button>
+            </form>
+            <div id="deleteTaskSuccess" style="color: green;"></div>
+        </div>
+    </section>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
